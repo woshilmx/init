@@ -1,0 +1,7 @@
+<!-- src/main/resources/mapper/BookMapper.xml -->
+<mapper namespace="com.example.mapper.BookMapper">
+    <insert id="createBook" parameterType="com.example.model.Book">
+        INSERT INTO books (name, spec, purchase_date, purchase_price)
+        VALUES (#{name}, #{spec}, #{purchaseDate}, #{purchasePrice})
+    </insert>
+</mapper>
